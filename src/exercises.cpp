@@ -190,16 +190,6 @@ string exercise_11(int number) {
         if (codigo[i] - '0' != fibo[i])
             return false;
     }
-    
-    // Verificar si los dígitos restantes cumplen la secuencia de Fibonacci
-    int a = 5, b = 8;
-    for (size_t i = 5; i < codigo.length(); i++) {
-        int fibo_num = a + b;
-        if (codigo[i] - '0' != fibo_num)
-            return false;
-        a = b;
-        b = fibo_num;
-    }
 
 
 void exercise_12(string color1, int numb1,
