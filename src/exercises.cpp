@@ -11,26 +11,13 @@ void exercise_1(string s1, string s2, string s3) {
 using namespace std;
 
 void exercise_1() {
-    string s1, s2, s3;
-
-    cout << "Ingrese tres palabras separadas por espacios: ";
-    getline(cin, s1);
-    getline(cin, s2);
-    getline(cin, s3);
-
-
-    string min_lex;
     if (s1 < s2 && s1 < s3) {
-        min_lex = s1;
+    cout << s1;
     } else if (s2 < s1 && s2 < s3) {
-        min_lex = s2;
+    cout << s2;
     } else {
-        min_lex = s3;
+    cout << s3;
     }
-
-  
-    cout << "La palabra mínima en orden lexicográfico es: " << min_lex << endl;
-
 
 }
 
