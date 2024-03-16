@@ -118,32 +118,33 @@ void exercise_7(double r) {
 }
 
 void exercise_8(long int seconds) {
-  #include <iostream>
-#include <cmath> // Necesario para log10
-
-using namespace std;
-
-// Esta función toma dos enteros positivos y devuelve el producto de su suma y el número de dígitos en esa suma.
-// Si alguno de los números es negativo, devuelve 0.
-int calculate(int a, int b) {
-    if (a < 0 || b < 0)
-        return 0;
-
-    int sum = a + b;
-    int digit_count = (sum == 0) ? 1 : (int)log10(abs(sum)) + 1; // Contar los dígitos en la suma
-    return sum * digit_count;
+        throw invalid_argument("Error: Input seconds cannot be negative.");
+    }
+    long int hours = seconds / 3600;
+    seconds %= 3600;
+    long int minutes = seconds / 60;
+    seconds %= 60;
+    cout << (hours < 10 ? "0" : "") << hours << ":"
+         << (minutes < 10 ? "0" : "") << minutes << ":"
+         << (seconds < 10 ? "0" : "") << seconds << endl;
+         {
 }
 
-int main() {
-    int a, b;
-    cout << "Enter two positive integers: ";
-    cin >> a >> b;
 
-    int result = calculate(a, b);
-    cout << "Result: " << result << endl;
+int main() {
+    long int input_seconds;
+    cout << "Enter the total number of seconds: ";
+    cin >> input_seconds;
+
+    try {
+        exercise_8(input_seconds);
+    } catch (const invalid_argument& e) {
+        cerr << e.what() << endl;
+    }
 
     return 0;
 }
+
 
 }
 
