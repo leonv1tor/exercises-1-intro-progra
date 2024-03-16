@@ -189,7 +189,7 @@ string exercise_11(int number) {
     for (int i = 0; i < 5; i++) {
         if (codigo[i] - '0' != fibo[i])
             return false;
-    }
+}
 
 
 void exercise_12(string color1, int numb1,
