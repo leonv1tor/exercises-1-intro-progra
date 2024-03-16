@@ -118,7 +118,6 @@ void exercise_7(double r) {
 }
 
 void exercise_8(long int seconds) {
-  void showTime(long int seconds) {
     if (seconds < 0) {
         throw invalid_argument("Error: Input seconds cannot be negative.");
     }
