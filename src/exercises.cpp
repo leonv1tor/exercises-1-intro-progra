@@ -118,7 +118,33 @@ void exercise_7(double r) {
 }
 
 void exercise_8(long int seconds) {
-  //
+  #include <iostream>
+#include <cmath> // Necesario para log10
+
+using namespace std;
+
+// Esta función toma dos enteros positivos y devuelve el producto de su suma y el número de dígitos en esa suma.
+// Si alguno de los números es negativo, devuelve 0.
+int calculate(int a, int b) {
+    if (a < 0 || b < 0)
+        return 0;
+
+    int sum = a + b;
+    int digit_count = (sum == 0) ? 1 : (int)log10(abs(sum)) + 1; // Contar los dígitos en la suma
+    return sum * digit_count;
+}
+
+int main() {
+    int a, b;
+    cout << "Enter two positive integers: ";
+    cin >> a >> b;
+
+    int result = calculate(a, b);
+    cout << "Result: " << result << endl;
+
+    return 0;
+}
+
 }
 
 string exercise_9(string s1, string s2, string s3, string s4, string s5) {
