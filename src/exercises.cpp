@@ -119,26 +119,9 @@ void exercise_7(double r) {
 
 void exercise_8(long int seconds) {
   //
-  
-}
-
-
-int main() {
-    long int input_seconds;
-    cout << "Enter the total number of seconds: ";
-    cin >> input_seconds;
-
-    try {
-        exercise_8(input_seconds);
-    } catch (const invalid_argument& e) {
-        cerr << e.what() << endl;
-    }
-
-    return 0;
-}
-
 
 }
+
 
 string exercise_9(string s1, string s2, string s3, string s4, string s5) {
 
