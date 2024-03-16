@@ -95,15 +95,9 @@ void exercise_2(double A, double B, double C){
     {
           cout<<"";
     }
->>>>>>> 52ce6cc7e13938f775b93ee3ad7062d08644c47d
-}
-
-<<<<<<< HEAD
-
 
 }
 
-=======
 
 >>>>>>> 52ce6cc7e13938f775b93ee3ad7062d08644c47d
 void exercise_3(int a, int b) {
