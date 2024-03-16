@@ -118,6 +118,9 @@ void exercise_7(double r) {
 }
 
 void exercise_8(long int seconds) {
+          throw invalid_argument("Error: Input seconds cannot be negative.");
+    }
+
       if (seconds < 0) {
     long int hours = seconds / 3600;
     seconds %= 3600;
