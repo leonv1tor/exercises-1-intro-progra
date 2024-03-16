@@ -176,7 +176,23 @@ int exercise_10(int a, int b) {
 }
 
 string exercise_11(int number) {
-  //
+  if len(codigo) < 5:
+        return False
+    
+    fibo = [1, 1, 2, 3, 5]
+    
+    for i in range(5):
+        if int(codigo[i]) != fibo[i]:
+            return False
+    
+    a, b = 5, 8
+    for i in range(5, len(codigo)):
+        fibo_num = a + b
+        if int(codigo[i]) != fibo_num:
+            return False
+        a, b = b, fibo_num
+    
+    return True
 }
 
 void exercise_12(string color1, int numb1,
