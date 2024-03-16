@@ -122,7 +122,29 @@ void exercise_8(long int seconds) {
 }
 
 string exercise_9(string s1, string s2, string s3, string s4, string s5) {
-  // TODO: YOUR CODE HERE
+  #include <iostream>
+#include <string>
+#include <cmath>
+
+std::string procesarPalabras() {
+    std::string palabra1, palabra2, palabra3, palabra4, palabra5;
+    std::cin >> palabra1 >> palabra2 >> palabra3 >> palabra4 >> palabra5;
+    
+    char primerCaracterPalabra1 = palabra1[0];
+    char primerCaracterPalabra5 = palabra5[0];
+
+    if (primerCaracterPalabra1 == primerCaracterPalabra5) {
+        return "Hemos encontrado algo!";
+    } else {
+        return "Aun sin suerte";
+    }
+}
+
+int main() {
+    std::cout << procesarPalabras() << std::endl;
+    return 0;
+}
+
   return "";
 }
 
