@@ -294,4 +294,4 @@ void exercise_16(int debut, int fin) {
     cout << "El monto total a pagar es de " << costo_total << " boliviano(s)." << endl;
 }
 
-//TODO TERMINADO
+//TODO TERMINADO//
