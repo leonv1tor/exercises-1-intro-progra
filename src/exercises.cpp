@@ -19,7 +19,31 @@ if (s1 < s2 && s1 < s3) {
 
 
 void exercise_2(double A, double B, double C) {
-  // TODO: YOUR CODE HERE
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    cout << "Ingrese los coeficientes A, B y C separados por espacios: ";
+    double A, B, C;
+    cin >> A >> B >> C;
+
+    double discriminante = B * B - 4 * A * C;
+
+    if (discriminante > 0) {
+        double raiz1 = (-B + sqrt(discriminante)) / (2 * A);
+        double raiz2 = (-B - sqrt(discriminante)) / (2 * A);
+        cout << "Las raices reales distintas son: " << raiz1 << " y " << raiz2 << endl;
+    } else if (discriminante == 0) {
+        double raiz = -B / (2 * A);
+        cout << "La raiz doble es: " << raiz << endl;
+    } else {
+        cout << "No hay raices reales" << endl;
+    }
+
+    return 0;
+}
 }
 
 void exercise_3(int a, int b) {
