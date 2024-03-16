@@ -22,9 +22,10 @@ string min_lexicographic_line(string line1, string line2, string line3) {
 
 int main() {
     string line1, line2, line3;
+    cout << "Ingrese las tres líneas separadas por espacios: ";
     cin >> line1 >> line2 >> line3;
     string result = min_lexicographic_line(line1, line2, line3);
-    cout << result << endl;
+    cout << "La línea mínima en orden lexicográfico es: " << result << endl;
     return 0;
 }
 
