@@ -176,7 +176,38 @@ int exercise_10(int a, int b) {
 }
 
 string exercise_11(int number) {
-  //
+  
+}bool es_fibo(string codigo) {
+    // Definir los primeros cinco números de Fibonacci
+    int fibo[] = {1, 1, 2, 3, 5};
+    
+    // Verificar si el código del collar tiene al menos 5 dígitos
+    if (codigo.length() < 5)
+        return false;
+    
+    // Verificar si los primeros cinco dígitos coinciden con los primeros cinco números de Fibonacci
+    for (int i = 0; i < 5; i++) {
+        if (codigo[i] - '0' != fibo[i])
+            return false;
+    }
+    
+    // Verificar si los dígitos restantes cumplen la secuencia de Fibonacci
+    int a = 5, b = 8;
+    for (size_t i = 5; i < codigo.length(); i++) {
+        int fibo_num = a + b;
+        if (codigo[i] - '0' != fibo_num)
+            return false;
+        a = b;
+        b = fibo_num;
+    }
+    
+    return true;
+}
+
+int main() {
+    // Leer el código del collar desde la entrada estándar
+    string codigo_collar;
+    cin >> codigo_collar;
 }
 
 void exercise_12(string color1, int numb1,
@@ -251,13 +282,11 @@ void exercise_16(int debut, int fin) {
         return;
     }
 
-    // Verificar si la hora de inicio es igual a la hora de finalización
     if (debut == fin) {
         cout << "Que extraño, no has alquilado tu bicicleta por mucho tiempo!" << endl;
         return;
     }
 
-    // Verificar si la hora de inicio es mayor que la hora de finalización
     if (debut > fin) {
         cout << "Que extraño, el inicio del alquiler es después del final..." << endl;
         return;
@@ -277,7 +306,6 @@ void exercise_16(int debut, int fin) {
         hora_actual++;
     }
 
-    // Mostrar el resultado con el formato esperado por las pruebas
     cout << "Haz alquilado una bicicleta por" << endl;
 
     if (horas_tarifa_1 > 0) {
