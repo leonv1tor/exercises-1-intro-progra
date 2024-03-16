@@ -176,7 +176,6 @@ int exercise_10(int a, int b) {
 }
 
 string exercise_11(int number) {
-  // TODO: YOUR CODE HERE
   int fib_prev = 0;
     int fib_curr = 1;
 
