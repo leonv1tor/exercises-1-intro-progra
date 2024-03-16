@@ -25,7 +25,7 @@ void exercise_2(double A, double B, double C){
     if (discriminante > 0) {
         double raiz1 = (-B + sqrt(discriminante)) / (2 * A);
         double raiz2 = (-B - sqrt(discriminante)) / (2 * A);
-        cout << "Las raices reales distintas son: " << raiz1 << " y " << raiz2 << endl;
+        cout << raiz1 << raiz2 << endl;
     } else if (discriminante == 0) {
         double raiz = -B / (2 * A);
         cout << "La raiz doble es: " << raiz << endl;
