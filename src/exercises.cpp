@@ -5,7 +5,8 @@
 using namespace std;
 
 void exercise_1(string s1, string s2, string s3) {
-  #include <iostream>
+  // TODO: YOUR CODE HERE
+#include <iostream>
 #include <string>
 
 using namespace std;
@@ -27,6 +28,7 @@ int main() {
     return 0;
 }
 
+}
 
 
 
