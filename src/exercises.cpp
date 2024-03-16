@@ -5,21 +5,30 @@
 using namespace std;
 
 void exercise_1(string s1, string s2, string s3) {
-#include <iostream>
+  #include <iostream>
 #include <string>
 
 using namespace std;
 
-void exercise_1() {
-    
-
+string min_lexicographic_line(string line1, string line2, string line3) {
+    string min_line = line1;
+    if (line2 < min_line)
+        min_line = line2;
+    if (line3 < min_line)
+        min_line = line3;
+    return min_line;
 }
 
 int main() {
-    exercise_1();
+    string line1, line2, line3;
+    cin >> line1 >> line2 >> line3;
+    string result = min_lexicographic_line(line1, line2, line3);
+    cout << result << endl;
     return 0;
-
 }
+
+
+
 
 
 void exercise_2(double A, double B, double C) {
