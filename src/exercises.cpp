@@ -21,13 +21,6 @@ void exercise_1() {
 
 }
 
-int main() {
-    exercise_1();
-    return 0;
-
-}
-
-}
 
 void exercise_2(double A, double B, double C) {
   // TODO: YOUR CODE HERE
