@@ -119,6 +119,7 @@ void exercise_7(double r) {
 
 void exercise_8(long int seconds) {
   //
+  
 }
 
 
