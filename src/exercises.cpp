@@ -177,18 +177,6 @@ int exercise_10(int a, int b) {
 
 string exercise_11(int number) {
   
-}bool es_fibo(string codigo) {
-    // Definir los primeros cinco números de Fibonacci
-    int fibo[] = {1, 1, 2, 3, 5};
-    
-    // Verificar si el código del collar tiene al menos 5 dígitos
-    if (codigo.length() < 5)
-        return false;
-    
-    // Verificar si los primeros cinco dígitos coinciden con los primeros cinco números de Fibonacci
-    for (int i = 0; i < 5; i++) {
-        if (codigo[i] - '0' != fibo[i])
-            return false;
 }
 
 
