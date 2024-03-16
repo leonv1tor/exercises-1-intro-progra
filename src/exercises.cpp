@@ -56,7 +56,13 @@ void exercise_3(int a, int b) {
 }
 
 void exercise_4(double n, double a, double b, double x, double y) {
-  // TODO: YOUR CODE HERE
+    if (n > b) {
+        n *= 1.0 - y / 100;
+    } else if (n > a) {
+        n *= 1.0 - x / 100;
+    }
+
+    cout << n << endl;
 }
 
 void exercise_5(char character) {
