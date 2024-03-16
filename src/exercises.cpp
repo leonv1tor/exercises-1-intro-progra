@@ -118,7 +118,7 @@ void exercise_7(double r) {
 }
 
 void exercise_8(long int seconds) {
-  if (seconds < 0) {
+      if (seconds < 0) {
         throw invalid_argument("Error: Input seconds cannot be negative.");
     }
 
@@ -131,6 +131,7 @@ void exercise_8(long int seconds) {
          << (minutes < 10 ? "0" : "") << minutes << ":"
          << (seconds < 10 ? "0" : "") << seconds << endl;
 }
+
 
 
 
