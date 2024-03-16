@@ -175,16 +175,14 @@ int exercise_10(int a, int b) {
     return sum * digit_count;
 }
 
-string exercise_11(int number){
-  string exercise_11(int number) {
+//Ejercicio n11
+string exercise_11(int number) {
     if (number == 11235813){
         return "Se encontro a Fibonacci"; 
     } else {
         return "Esto no es de Fibonacci";
 }
 }
-}
-
 
 void exercise_12(string color1, int numb1,
                  string color2, int numb2,
