@@ -176,7 +176,19 @@ int exercise_10(int a, int b) {
 }
 
 string exercise_11(int number) {
-  
+      if (es_fibo(number))
+        return "Se encontro Fibonacci";
+    else
+        return "Esto no es de Fibonacci";
+}
+
+int main() {
+    int numero;
+    cout << "Ingrese un numero: ";
+    cin >> numero;
+    
+    cout << exercise_11(numero) << endl;
+
 }
 
 
