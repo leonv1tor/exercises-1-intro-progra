@@ -61,7 +61,35 @@ void exercise_5(char character) {
 }
 
 void exercise_6(int number) {
-  // TODO: YOUR CODE HERE
+  if (1 <= number && number <=7) {
+       
+    switch(number) {
+    
+        case 1:
+            cout << "Monday\n"; 
+            break;
+        case 2:
+            cout << "Thursday\n"; 
+            break;
+        case 3:
+            cout << "Wednesday\n"; 
+            break;
+        case 4:
+            cout << "Thursday\n"; 
+            break;
+        case 5:
+            cout << "Friday\n"; 
+            break;
+        case 6:
+            cout << "Saturday\n"; 
+            break;
+        case 7:
+            cout << "Sunday\n"; 
+            break;
+    }
+ } else {
+   cout <<"Invalid input\n";
+ }
 }
 
 void exercise_7(double r) {
