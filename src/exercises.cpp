@@ -200,15 +200,7 @@ string exercise_11(int number) {
         a = b;
         b = fibo_num;
     }
-    
-    return true;
-}
 
-int main() {
-    // Leer el código del collar desde la entrada estándar
-    string codigo_collar;
-    cin >> codigo_collar;
-}
 
 void exercise_12(string color1, int numb1,
                  string color2, int numb2,
