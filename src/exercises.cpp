@@ -295,3 +295,4 @@ void exercise_16(int debut, int fin) {
 }
 
 //TODO TERMINADO//
+//CHECK
